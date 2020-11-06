@@ -11,9 +11,9 @@
             android:title="@string/explore" />
 
         <item
-            android:id="@+id/nav_home"
-            android:icon="@drawable/ic_menu_camera"
-            android:title="@string/menu_home" />
+            android:id="@+id/nav_notifications"
+            android:icon="@drawable/ic_bell"
+            android:title="@string/notifications" />
 
         <item
             android:id="@+id/nav_slideshow"

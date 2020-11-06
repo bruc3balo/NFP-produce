@@ -9,6 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.NFPproduce">
+        <activity android:name=".ui.reviews.Reviews"></activity>
+        <activity android:name=".ui.wishlist.Wishlist" />
+        <activity android:name=".ui.cart.Cart" />
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name"

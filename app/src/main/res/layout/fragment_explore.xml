@@ -15,6 +15,7 @@
        app:layout_constraintStart_toStartOf="parent"
        app:layout_constraintTop_toTopOf="parent"
        android:orientation="vertical">
+
        <LinearLayout
            android:padding="5dp"
            android:layout_width="match_parent"
@@ -24,6 +25,7 @@
            <Spinner
                android:layout_width="match_parent"
                android:layout_height="wrap_content"
+               android:layout_gravity="center"
                android:background="@color/semiBlack"/>
 
            <TextView
@@ -35,10 +37,21 @@
                android:text="Category 1"
                android:textStyle="bold"/>
 
-           <GridView
+           <View
                android:layout_width="match_parent"
-               android:layout_height="200dp"
+               android:layout_height="1dp"
                android:layout_gravity="center"
+               android:background="@color/semiBlack"/>
+
+           <androidx.recyclerview.widget.RecyclerView
+               android:id="@+id/category1Grid"
+               android:layout_width="match_parent"
+               android:orientation="horizontal"
+               android:layout_height="wrap_content"
+               tools:listitem="@layout/product_item"
+               android:layout_gravity="center"
+               android:layout_marginTop="5dp"
+               android:layout_marginBottom="5dp"
                android:padding="5dp"/>
 
            <TextView
@@ -49,6 +62,12 @@
                android:textColor="@color/black"
                android:text="Category 2"
                android:textStyle="bold"/>
+
+           <View
+               android:layout_width="match_parent"
+               android:layout_height="1dp"
+               android:layout_gravity="center"
+               android:background="@color/semiBlack"/>
 
            <GridView
                android:layout_width="match_parent"
@@ -65,6 +84,12 @@
                android:text="Category 3"
                android:textStyle="bold"/>
 
+           <View
+               android:layout_width="match_parent"
+               android:layout_height="1dp"
+               android:layout_gravity="center"
+               android:background="@color/semiBlack"/>
+
            <GridView
                android:layout_width="match_parent"
                android:layout_height="200dp"
@@ -79,6 +104,12 @@
                android:textColor="@color/black"
                android:text="Category 4"
                android:textStyle="bold"/>
+
+           <View
+               android:layout_width="match_parent"
+               android:layout_height="1dp"
+               android:layout_gravity="center"
+               android:background="@color/semiBlack"/>
 
            <GridView
                android:layout_width="match_parent"
@@ -95,14 +126,20 @@
                android:text="Category 5"
                android:textStyle="bold"/>
 
+           <View
+               android:layout_width="match_parent"
+               android:layout_height="1dp"
+               android:layout_gravity="center"
+               android:background="@color/semiBlack"/>
+
            <GridView
                android:layout_width="match_parent"
                android:layout_height="200dp"
                android:layout_gravity="center"
                android:padding="5dp"/>
 
-
        </LinearLayout>
+
    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
