@@ -19,7 +19,6 @@
             android:background="@color/greenPrimary"
             android:layout_gravity="center"
             app:titleTextColor="@color/black"
-            app:logo="@mipmap/nfp_png"
             app:titleTextAppearance="@style/TextAppearance.Compat.Notification.Info"
             app:popupTheme="@style/Theme.NFPproduce.PopupOverlay" />
 
