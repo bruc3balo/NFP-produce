@@ -2,7 +2,7 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/mobile_navigation"
+    android:id="@+id/user_navigation"
     app:startDestination="@+id/nav_notifications">
 
     <fragment
@@ -18,9 +18,9 @@
         tools:layout="@layout/fragment_explore"/>
 
     <fragment
-        android:id="@+id/nav_slideshow"
-        android:name="com.example.nfp_produce.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_slideshow"/>
+        android:id="@+id/nav_myOrders"
+        android:name="com.example.nfp_produce.ui.orders.OrdersFragment"
+        android:label="@string/orders"
+        tools:layout="@layout/fragment_myOrders"/>
 
 </navigation>
