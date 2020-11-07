@@ -10,12 +10,9 @@ import android.view.ViewGroup;
 
 import com.example.nfp_produce.R;
 
-
 public class EmployeesFragment extends Fragment {
 
-    public EmployeesFragment() {
-        // Required empty public constructor
-    }
+    public EmployeesFragment () { }
 
     public static EmployeesFragment newInstance() {
         return new EmployeesFragment();
