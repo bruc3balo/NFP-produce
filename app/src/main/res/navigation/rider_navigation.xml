@@ -9,18 +9,18 @@
         android:id="@+id/nav_jobs"
         android:name="com.example.nfp_produce.rider.riderUi.jobs.RiderJobs"
         android:label="@string/jobs"
-        tools:layout="@layout/fragment_notifications"/>
+        tools:layout="@layout/fragment_rider_jobs"/>
 
     <fragment
         android:id="@+id/nav_profile"
         android:name="com.example.nfp_produce.rider.riderUi.profile.RiderProfile"
         android:label="@string/profile"
-        tools:layout="@layout/fragment_explore"/>
+        tools:layout="@layout/fragment_rider_profile"/>
 
     <fragment
         android:id="@+id/nav_history"
         android:name="com.example.nfp_produce.rider.riderUi.history.RiderHistory"
         android:label="@string/history"
-        tools:layout="@layout/fragment_myOrders"/>
+        tools:layout="@layout/fragment_rider_history"/>
 
 </navigation>
