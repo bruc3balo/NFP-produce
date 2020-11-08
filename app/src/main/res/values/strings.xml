@@ -28,4 +28,10 @@
     <string name="profile">Profile</string>
     <string name="jobs">Jobs</string>
     <string name="history">History</string>
+    <string name="title">Title</string>
+    <string name="description">Description</string>
+    <string name="number">Number of Items</string>
+    <string name="price">Price</string>
+    <string name="product_name">Product Name</string>
+    <string name="to_be_filled">-</string>
 </resources>
