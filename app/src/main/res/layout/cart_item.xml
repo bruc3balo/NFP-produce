@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<LinearLayout xmlns:tools="http://schemas.android.com/tools"
     android:background="#2DF4F4F4"
     android:padding="4dp"
     android:gravity="center"
@@ -50,7 +50,7 @@
             <TextView
                 android:id="@+id/commodityName_wish_cart"
                 android:layout_gravity="center"
-                android:gravity="center_vertical"
+                android:gravity="center"
                 android:layout_width="match_parent"
                 android:padding="4dp"
                 android:layout_height="0dp"
@@ -62,7 +62,7 @@
             <TextView
                 android:id="@+id/commodityPrice_wish_cart"
                 android:layout_gravity="center"
-                android:gravity="center_vertical"
+                android:gravity="center"
                 android:layout_weight="1"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
@@ -70,14 +70,44 @@
 
 
 
-            <TextView
+            <LinearLayout
                 android:id="@+id/commodityNumber_wish_cart"
                 android:layout_gravity="center"
                 android:gravity="center_vertical"
                 android:layout_weight="1"
                 android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:text="Number of items"/>
+                android:orientation="horizontal"
+                android:layout_height="0dp">
+
+                <ImageButton
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_gravity="center"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/ic_key_left"
+                    android:layout_height="match_parent"
+                    tools:ignore="NestedWeights" />
+
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="Number of items"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    tools:ignore="NestedWeights" />
+
+                <ImageButton
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:background="@android:color/transparent"
+                    android:rotationY="180"
+                    android:src="@drawable/ic_key_left"
+                    android:layout_gravity="center"
+                    android:layout_height="match_parent"
+                    tools:ignore="NestedWeights" />
+
+            </LinearLayout>
 
         </LinearLayout>
     </LinearLayout>
@@ -85,7 +115,8 @@
 
 
     <LinearLayout
-        android:padding="4dp"
+        android:padding="5dp"
+        android:layout_margin="1dp"
         android:layout_gravity="center"
         android:layout_width="match_parent"
         android:layout_height="35dp"

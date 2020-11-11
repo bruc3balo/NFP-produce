@@ -12,36 +12,37 @@ import android.view.ViewGroup;
 
 import com.example.nfp_produce.R;
 import com.example.nfp_produce.admin.users.adapter.UsersRvAdapter;
+import static com.example.nfp_produce.admin.AdminActivity.currentAdminPage;
+import static com.example.nfp_produce.admin.AdminActivity.fab;
 
 import java.util.LinkedList;
 
 
 public class UsersFragment extends Fragment {
 
-    private LinkedList<String> user_list = new LinkedList<>();
+    private final LinkedList<String> user_list = new LinkedList<>();
 
     public UsersFragment() {
         // Required empty public constructor
     }
 
-
     public static UsersFragment newInstance() {
-
         return new UsersFragment();
     }
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
     }
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         // Inflate the layout for this fragment
 
         final View v = inflater.inflate(R.layout.fragment_users, container, false);
+
+        currentAdminPage = 6;
+        fab.setVisibility(View.GONE);
 
         //Rv
         RecyclerView recyclerView = v.findViewById(R.id.users_rv);
@@ -56,4 +57,5 @@ public class UsersFragment extends Fragment {
 
         return v;
     }
+
 }

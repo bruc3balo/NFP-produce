@@ -12,6 +12,8 @@ import android.view.ViewGroup;
 
 import com.example.nfp_produce.R;
 import com.example.nfp_produce.admin.updates.adapter.UpdatesRvAdapter;
+import static com.example.nfp_produce.admin.AdminActivity.currentAdminPage;
+import static com.example.nfp_produce.admin.AdminActivity.fab;
 
 import java.util.LinkedList;
 
@@ -40,6 +42,9 @@ public class UpdatesFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         final View v = inflater.inflate(R.layout.fragment_updates, container, false);
+
+        currentAdminPage = 5;
+        fab.setVisibility(View.GONE);
 
         //Rv
         RecyclerView recyclerView = v.findViewById(R.id.admin_updates_rv);

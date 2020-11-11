@@ -12,8 +12,12 @@ import android.view.ViewGroup;
 
 import com.example.nfp_produce.R;
 import com.example.nfp_produce.admin.addNewProduct.adapter.NewProductRvAdapter;
+import com.google.android.material.snackbar.Snackbar;
 
 import java.util.LinkedList;
+
+import static com.example.nfp_produce.admin.AdminActivity.currentAdminPage;
+import static com.example.nfp_produce.admin.AdminActivity.fab;
 
 public class NewProductFragment extends Fragment {
 
@@ -21,6 +25,7 @@ public class NewProductFragment extends Fragment {
 
     public NewProductFragment() {
         // Required empty public constructor
+
     }
 
 
@@ -39,6 +44,10 @@ public class NewProductFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         final View v = inflater.inflate(R.layout.fragment_new_product, container, false);
+
+        currentAdminPage = 0;
+        fab.setVisibility(View.VISIBLE);
+        fab.setOnClickListener(view -> Snackbar.make(view, "Add New Product", Snackbar.LENGTH_LONG).setAction("Action", null).show());
 
         //Rv
         RecyclerView recyclerView = v.findViewById(R.id.new_product_rv);

@@ -12,6 +12,8 @@ import android.view.ViewGroup;
 
 import com.example.nfp_produce.R;
 import com.example.nfp_produce.admin.logs.adapter.LogsRvAdapter;
+import static com.example.nfp_produce.admin.AdminActivity.currentAdminPage;
+import static com.example.nfp_produce.admin.AdminActivity.fab;
 
 import java.util.LinkedList;
 
@@ -38,6 +40,9 @@ public class LogsFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
         final View v = inflater.inflate(R.layout.fragment_logs, container, false);
+
+        currentAdminPage = 3;
+        fab.setVisibility(View.GONE);
 
         //Rv
         RecyclerView recyclerView = v.findViewById(R.id.logs_rv);

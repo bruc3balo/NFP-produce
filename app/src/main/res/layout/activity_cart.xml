@@ -20,7 +20,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="top"
             android:background="@color/greenPrimary"
-            app:navigationIcon="@drawable/basket"
+            app:navigationIcon="@drawable/ic_cart_"
             app:title="Cart"
             app:titleTextColor="@color/white" />
 
@@ -28,6 +28,7 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_gravity="center"
+            tools:listitem="@layout/cart_item"
             android:layout_weight="1"
             android:isScrollContainer="true"
             android:padding="10dp" />
@@ -37,7 +38,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="bottom"
             android:background="@color/greenPrimary"
-            android:text="Buy"
+            android:text="@string/confirm"
             android:textColor="@color/white"
             android:textStyle="bold" />
 

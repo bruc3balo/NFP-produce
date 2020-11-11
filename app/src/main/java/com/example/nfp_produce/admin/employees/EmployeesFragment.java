@@ -12,6 +12,10 @@ import android.view.ViewGroup;
 
 import com.example.nfp_produce.R;
 import com.example.nfp_produce.admin.employees.adapter.EmployeeRvAdapter;
+import com.google.android.material.snackbar.Snackbar;
+
+import static com.example.nfp_produce.admin.AdminActivity.currentAdminPage;
+import static com.example.nfp_produce.admin.AdminActivity.fab;
 
 import java.util.LinkedList;
 
@@ -35,6 +39,10 @@ public class EmployeesFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
         final View v = inflater.inflate(R.layout.fragment_emplyees, container, false);
+
+        currentAdminPage = 2;
+        fab.setVisibility(View.VISIBLE);
+        fab.setOnClickListener(view -> Snackbar.make(view, "Add employee", Snackbar.LENGTH_LONG).setAction("Action", null).show());
 
         //Rv
         RecyclerView recyclerView = v.findViewById(R.id.employee_rv);

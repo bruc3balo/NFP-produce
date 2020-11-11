@@ -3,9 +3,9 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_gravity="center"
-    android:layout_marginEnd="8dp"
     android:layout_marginStart="8dp"
     android:layout_marginTop="10dp"
+    android:layout_marginEnd="8dp"
     android:layout_marginBottom="12dp"
     android:background="#2DF4F4F4"
     android:gravity="center"
@@ -56,7 +56,7 @@
                 android:layout_gravity="center"
                 android:layout_weight="1"
                 android:fontFamily="sans-serif-black"
-                android:gravity="center_vertical"
+                android:gravity="center"
                 android:padding="4dp"
                 android:text="comodity Name"
                 android:textAllCaps="true"
@@ -68,7 +68,7 @@
                 android:layout_height="0dp"
                 android:layout_gravity="center"
                 android:layout_weight="1"
-                android:gravity="center_vertical"
+                android:gravity="center"
                 android:text="Price" />
 
 
@@ -78,7 +78,7 @@
                 android:layout_height="0dp"
                 android:layout_gravity="center"
                 android:layout_weight="1"
-                android:gravity="center_vertical"
+                android:gravity="center"
                 android:text="Number of items" />
 
         </LinearLayout>
@@ -87,6 +87,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="35dp"
+        android:layout_gravity="bottom"
         android:orientation="horizontal">
 
         <ImageButton
@@ -106,7 +107,7 @@
             android:layout_gravity="center"
             android:layout_weight="1"
             android:background="#00FFFFFF"
-            android:src="@drawable/basket" />
+            android:src="@drawable/ic_cart_" />
 
     </LinearLayout>
 

@@ -27,8 +27,6 @@ public class RiderActivity extends AppCompatActivity {
 
         Toolbar toolbar = findViewById(R.id.toolbar_rider);
         setSupportActionBar(toolbar);
-        FloatingActionButton fab = findViewById(R.id.fabRider);
-        fab.setOnClickListener(view -> Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG).setAction("Action", null).show());
         DrawerLayout drawer = findViewById(R.id.drawer_layout_rider);
         NavigationView navigationView = findViewById(R.id.nav_view_rider);
         // Passing each menu ID as a set of Ids because each
